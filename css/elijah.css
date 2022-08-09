@@ -1,0 +1,47 @@
+body {
+    background-color: lightslategray;
+    font-family: 'Times New Roman', Times, serif;
+    display: flexbox;
+    color: antiquewhite;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+li {
+    margin: auto;
+}
+.grassType {
+    color: greenyellow;
+}
+.fireType {
+    color: red;
+}
+.waterType {
+    color: cyan;
+}
+
+
+#linkHeader {
+    margin: auto;
+    display: inline;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: coral;
+}
+.nav-link:hover {
+    color: coral;
+}
+
+th {
+    width: 50%;
+    padding-left: 5px;
+}
+
+td {
+    width: 50%;
+    padding-left: 5px;
+}
