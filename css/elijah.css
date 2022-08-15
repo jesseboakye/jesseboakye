@@ -11,6 +11,9 @@ h3 {
 
 li {
     margin: auto;
+    opacity: 1;
+    transition-duration: 3s;
+    transition-property: opacity;
 }
 .grassType {
     color: greenyellow;
@@ -20,6 +23,9 @@ li {
 }
 .waterType {
     color: cyan;
+}
+.fade {
+    opacity: 0;
 }
 
 
