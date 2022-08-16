@@ -28,6 +28,10 @@
         </style>
     </head>
     <body>
+        <!--Javascript beginning pop up-->
+        <script>
+            window.alert("attention. you are entering a horrifying website. all of this is real. proceed at your own risk.");
+        </script>
         <!--first row-->
         <div class="jumbotron text-center">
             <div class="row">
@@ -50,9 +54,21 @@
 </div>
     <div class="row">
         <div class="col">
-        <h2>this is all the things he is doing</h2>
-        <li>eating cake</li>
-        <li>being funny</li>
+            <h2>this is all the things he is doing</h2>
+            <p id="demo"></p>
+            <!--Javascript list loop-->
+            <script>
+            const activities = ["eating cake", "being funny", "being a cat", "streaming on twitch"];
+            let fLen = activities.length;
+
+            let text = "<ul>";
+                for (let i = 0; i < fLen; i++) {
+                    text += "<li>" + activities[i] + "</li>";
+                }
+                text += "</ul>";
+                document.getElementById("demo").innerHTML = text;
+</script>
+
     </div>
     </div>
         <hr>
@@ -66,6 +82,27 @@
         </ol>
     </div>
 </div>
+<!--Javascript Arrays-->
+    <div class="row">
+        <div class="col">
+            <h2>here's a fun thing</h2>
+
+<p>click the button to cycle through all of this cat's possesions</p>
+
+<button onclick="arrayFunction()">Try it</button>
+
+<p id="array test"></p>
+
+<script>
+const stuff = ["computer", "desk", "house", "cake", "minecraft", "mango", "aquarium", "Need for Speed  II(1997)",];
+document.getElementById("array test").innerHTML = stuff;
+
+function arrayFunction() {
+  document.getElementById("array test").innerHTML = stuff.pop();
+}
+</script>
+        </div>
+    </div>
         <!--inline-->
         <table style="width: 100px; border: 1px solid black"><!--Mark's comment 8/2: Still unresolved. Mark's comment 7/17: try to get in the habit of ending the last item with a semicolon-->
             <tr>
@@ -81,6 +118,9 @@
         </table>
         <h2>please send your rsvp to <a href="mailto:funnycat@realemail.com">funnycat@realemail.com</a>
         </h2>
-        
+       <!--Javascript print button-->
+        <p>click here to print. do it.</p>
+        <button onclick="window.print()"> click me do it
+        </button>
     </body>
 </html>
