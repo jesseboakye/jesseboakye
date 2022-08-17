@@ -71,10 +71,12 @@
         <h1 style="color: antiquewhite;">List of Food</h1>
         <div class = "col-md-5">
             <ul class ="food" style="color: antiquewhite;">
-                <li class="food1">Bulgogi</li>
-                <li class="food2">burgers</li>
-                <li class="food3">pizza</li>
+                <li >Bulgogi</li>
+                <li >burgers</li>
+                <li >pizza</li>
             </ul>
+            <button id="button">click to recommend</button>
+            <p id="demo"></p>
         </div>
 </div>
 
@@ -123,7 +125,14 @@
     }
 
     /*an array*/
-    const food = [document.getElementbyId("food1"),document.getElementById("food2"),document.getElementById("food3")];
+    const food = ["ricecake","fries","tea"];
+    document.getElementById("recs").innerhtml = food;
+    var button = document.getElementById("button");
+    function printRecs(){
+        if(button.onclick){
+            document.getElementById("demo").innerHTML = food.pop();
+        }
+    }
 </script>
 </body>
 </html>
